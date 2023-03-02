@@ -1,0 +1,16 @@
+s = 0.5
+n = 21
+play 21
+f=108
+
+use_synth :piano
+87.times do
+  n= n +1
+  play(n)
+  sleep s
+end
+87.times do
+  f=f-1
+  play(f)
+  sleep s
+end
